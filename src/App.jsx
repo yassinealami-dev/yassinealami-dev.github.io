@@ -16,7 +16,7 @@ const projects = [
     description:
       "Een tweede beautywebsite met een vergelijkbaar onderwerp, maar met een eigen structuur, pagina-indeling en inhoud. Dit project laat zien hoe variaties in stijl en opmaak kunnen zorgen voor een andere gebruikerservaring.",
     tech: ["HTML", "CSS"],
-    link: "/voorbeelden/website2/index2.html",
+    link: "/voorbeelden/website 2 beauty braids/index2.html",
     live: true,
     buttonText: "Bekijk project",
   },
@@ -154,7 +154,7 @@ function App() {
                 <strong>Ik leer:</strong> React, JavaScript en responsive design
               </li>
               <li>
-                <strong>Doel:</strong> Een sterke portfolio opbouwen
+                <strong>Doel:</strong> Een sterke portfolio opbouwen 
               </li> 
             </ul>
           </div>
