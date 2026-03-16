@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recepten — Voorbeeldsite</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles3.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="brand">
+      <span class="brand-mark">🍲</span>
+      <span class="brand-name">Alami Recepten</span>
+    </div>
+
+    <nav class="links">
+      <a href="#categorieen">Categorieën</a>
+      <a href="#nieuw">Nieuw</a>
+      <a href="#populair">Populair</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="cta" href="#nieuw">Bekijk recepten</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>Eerlijke recepten. Snel, lekker en duidelijk.</h1>
+        <p>Voor thuis, mealprep en familie. Met tijd, porties en stappenplan.</p>
+
+        <div class="hero-actions">
+          <a class="button" href="#nieuw">Nieuwste recepten</a>
+          <a class="button secondary" href="#categorieen">Bekijk categorieën</a>
+        </div>
+
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Zoek een recept… (bijv. 'bastilla', 'kip', '15 min')" />
+          <button class="button small" id="searchBtn" type="button">Zoek</button>
+        </div>
+
+        <div class="badges">
+          <span>⏱️ 15–45 min</span>
+          <span>💸 Budget opties</span>
+          <span>🥗 Variaties</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Vandaag populair</h3>
+        <ul>
+          <li>Marokkaanse tomatensoep</li>
+          <li>Kip uit de oven</li>
+          <li>Snelle pasta (15 min)</li>
+        </ul>
+        <p class="muted">Tip: voeg later een “recipe of the week” foto toe.</p>
+      </div>
+    </section>
+
+    <!-- CATEGORIEËN -->
+    <section id="categorieen" class="section">
+      <h2>Categorieën</h2>
+      <p class="section-intro muted">Klik een categorie om te browsen (later maak je hier losse pagina’s van).</p>
+
+      <div class="category-grid">
+        <a class="category-tile tile-ontbijt" href="#nieuw">
+          <div class="tile-title">Ontbijt</div>
+          <div class="tile-meta">smoothies • pancakes • bowls</div>
+        </a>
+
+        <a class="category-tile tile-lunch" href="#nieuw">
+          <div class="tile-title">Lunch</div>
+          <div class="tile-meta">wraps • salades • soups</div>
+        </a>
+
+        <a class="category-tile tile-diner" href="#nieuw">
+          <div class="tile-title">Diner</div>
+          <div class="tile-meta">kip • pasta • oven</div>
+        </a>
+
+        <a class="category-tile tile-snacks" href="#nieuw">
+          <div class="tile-title">Snacks</div>
+          <div class="tile-meta">zoet • hartig • snel</div>
+        </a>
+
+        <a class="category-tile tile-mealprep" href="#nieuw">
+          <div class="tile-title">Mealprep</div>
+          <div class="tile-meta">budget • bakken • voorraad</div>
+        </a>
+
+        <a class="category-tile tile-marokkaans" href="#nieuw">
+          <div class="tile-title">Marokkaans</div>
+          <div class="tile-meta">tajine • bastilla • briwat</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- NIEUWSTE RECEPTEN -->
+    <section id="nieuw" class="section">
+      <h2>Nieuwste recepten</h2>
+      <p class="section-intro muted">Klik op een receptkaart (later maak je een aparte receptpagina zoals recept.html).</p>
+
+      <div class="recipes-grid" id="recipesGrid">
+        <!-- Card 1 -->
+        <a class="recipe-card" href="#"
+           data-title="Marokkaanse Tomatensoep"
+           data-tags="soep marokkaans budget 30min">
+          <div class="recipe-img img-soup"></div>
+          <div class="recipe-body">
+            <h3>Marokkaanse Tomatensoep</h3>
+            <p class="muted">Kruidig, vol smaak, perfect voor 6 personen.</p>
+            <div class="recipe-meta">
+              <span>⏱️ 35 min</span><span>👥 6</span><span>💸 €</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a class="recipe-card" href="#"
+           data-title="Kip uit de oven"
+           data-tags="diner kip oven 45min">
+          <div class="recipe-img img-chicken"></div>
+          <div class="recipe-body">
+            <h3>Kip uit de oven</h3>
+            <p class="muted">Sappig, kruidig en makkelijk. Familieproof.</p>
+            <div class="recipe-meta">
+              <span>⏱️ 50 min</span><span>👥 4</span><span>💸 €€</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a class="recipe-card" href="#"
+           data-title="Snelle Pasta 15 min"
+           data-tags="pasta lunch snel 15min">
+          <div class="recipe-img img-pasta"></div>
+          <div class="recipe-body">
+            <h3>Snelle Pasta (15 min)</h3>
+            <p class="muted">Ideaal na werk. Simpel en toch lekker.</p>
+            <div class="recipe-meta">
+              <span>⏱️ 15 min</span><span>👥 2</span><span>💸 €</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a class="recipe-card" href="#"
+           data-title="Bastilla (basis)"
+           data-tags="marokkaans bastilla feest 90min">
+          <div class="recipe-img img-bastilla"></div>
+          <div class="recipe-body">
+            <h3>Bastilla (basis)</h3>
+            <p class="muted">Feestelijk. Leg stap-voor-stap vast.</p>
+            <div class="recipe-meta">
+              <span>⏱️ 90 min</span><span>👥 6</span><span>💸 €€€</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a class="recipe-card" href="#"
+           data-title="Mealprep Rijst + Kip"
+           data-tags="mealprep budget 60min">
+          <div class="recipe-img img-mealprep"></div>
+          <div class="recipe-body">
+            <h3>Mealprep: Rijst + Kip</h3>
+            <p class="muted">4 bakjes klaar. Snel en goedkoop.</p>
+            <div class="recipe-meta">
+              <span>⏱️ 60 min</span><span>👥 4</span><span>💸 €</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a class="recipe-card" href="#"
+           data-title="Briwat (snack)"
+           data-tags="snack marokkaans zoet 40min">
+          <div class="recipe-img img-briwat"></div>
+          <div class="recipe-body">
+            <h3>Briwat (snack)</h3>
+            <p class="muted">Knapperig, zoet en verslavend lekker.</p>
+            <div class="recipe-meta">
+              <span>⏱️ 40 min</span><span>👥 6</span><span>💸 €€</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- POPULAIR -->
+    <section id="populair" class="section">
+      <h2>Populair</h2>
+
+      <div class="callout">
+        <div>
+          <h3>Wil je een “recept van de week” blok?</h3>
+          <p class="muted">Met 1 grote foto, korte intro en een knop naar de detailpagina.</p>
+        </div>
+        <a class="button" href="#nieuw">Bekijk recepten</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Snelle opties</h3>
+          <p>Ideeën, samenwerkingen of vragen?</p>
+          <div class="contact-actions">
+            <a class="button" href="mailto:info@alamirecepten.nl">E-mail</a>
+            <a class="button secondary" href="#">Instagram</a>
+          </div>
+          <p class="muted">Vervang dit later met jouw echte links.</p>
+        </div>
+
+        <form class="card form" onsubmit="event.preventDefault(); alert('Bericht verstuurd (voorbeeld).');">
+          <label>Naam <input required placeholder="Jouw naam" /></label>
+          <label>Onderwerp <input required placeholder="Bijv. vraag over recept" /></label>
+          <label>Bericht <textarea placeholder="Typ je bericht…"></textarea></label>
+          <button class="button" type="submit">Verstuur</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alami Recepten — voorbeeldwebsite</p>
+  </footer>
+
+  <script>
+    // jaartal
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // simpele “client-side” filter (werkt zonder backend)
+    const input = document.getElementById("searchInput");
+    const btn = document.getElementById("searchBtn");
+    const cards = Array.from(document.querySelectorAll(".recipe-card"));
+
+    function filterRecipes(){
+      const q = (input.value || "").toLowerCase().trim();
+      cards.forEach(card => {
+        const hay = (card.dataset.title + " " + card.dataset.tags).toLowerCase();
+        card.style.display = hay.includes(q) ? "block" : "none";
+      });
+    }
+
+    btn.addEventListener("click", filterRecipes);
+    input.addEventListener("input", filterRecipes);
+  </script>
+</body>
+</html>

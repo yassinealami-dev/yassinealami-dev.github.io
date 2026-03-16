@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f1ee; /* warm beige */
+  color: #2b2b2b;
+}
+
+img {
+  border-radius: 18px;
+  max-width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.header {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.categories {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+/* (optioneel) Als je category-card gebruikt op andere pagina’s */
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.hero-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.hero-gallery img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* BRAND TYPOGRAPHY */
+.brand-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.brand-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.15rem;
+  color: #6f6f6f;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* CATEGORY GRID */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 22px;
+}
+
+/* CATEGORY TILES */
+.category-tile {
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+
+  /* FOTO */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* tekst onderin */
+  gap: 6px;
+  padding: 18px;
+
+  color: #fff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.category-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.15);
+}
+
+/* Donkere overlay voor leesbaarheid */
+.category-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.10)
+  );
+  border-radius: 22px;
+}
+
+.category-tile > * {
+  position: relative;
+  z-index: 1;
+}
+
+.category-tile span {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+/* Tekst in de tile (1x gedefinieerd, dus geen conflict) */
+.tile-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.55);
+}
+
+.tile-meta {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.55);
+}
+
+/* FOTO ACHTERGRONDEN PER CATEGORIE */
+.tile-box-braids { background-image: url("img/foto.jpg"); }
+.tile-knotless-braids { background-image: url("img/haar1.jpg"); }
+.tile-cornrows { background-image: url("img/hero4.jpg"); }
+.tile-fulani-braids { background-image: url("img/haar2.jpg"); }
+.tile-goddess-braids { background-image: url("img/celebboxbraid.jpg"); }
+.tile-twists { background-image: url("img/hero2.jpg"); }
+
+/* CTA buttons */
+.cta {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(0,0,0,0.12);
+  color: #2b2b2b;
+  background: rgba(255,255,255,0.7);
+  transition: all .25s ease;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+.btn.primary {
+  background: #2b2b2b;
+  color: #fff;
+  border-color: #2b2b2b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
