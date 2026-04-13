@@ -38,15 +38,15 @@ const projects = [
   live: false,
   buttonText: "In opbouw",
 },
-  {
-    title: "Website 5 - React Basic",
-    description:
-      "Een React-project waarin de basis van componenten, state en interactieve elementen is verkend. De focus ligt op het begrijpen van moderne front-end development en het opbouwen van dynamische interfaces.",
-    tech: ["React", "Vite", "CSS"],
-    link: null,
-    live: false,
-    buttonText: "React-project",
-  },
+ {
+  title: "Website 5 - React Basic",
+  description:
+    "Een React-project waarin de basis van componenten, state en interactieve elementen is verkend. De focus ligt op het begrijpen van moderne front-end development en het opbouwen van dynamische interfaces.",
+  tech: ["React", "Vite", "CSS", "Supabase", "GitHub Pages"],
+  link: "https://yassinealami-dev.github.io/login-screen/",
+  live: true,
+  buttonText: "Bekijk project",
+},
   {
     title: "Website 6 - Mijn eerste project",
     description:
