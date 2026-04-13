@@ -56,6 +56,15 @@ const projects = [
     live: false,
     buttonText: "React-project",
   },
+  {
+   title: "Familietafel Almere - Restaurant Proefwebsite",
+  description:
+    "Een moderne React/Next.js proefwebsite voor Familietafel Almere. In dit project ligt de focus op een warme uitstraling, duidelijke navigatie, maaltijdcategorieën en een professionele restaurantpresentatie.",
+  tech: ["Next.js", "React", "TypeScript", "CSS", "GitHub Pages"],
+  link: "https://yassinealami-dev.github.io/familietafel-almere/",
+  live: true,
+  buttonText: "Bekijk project",
+},
 
 ];
 
